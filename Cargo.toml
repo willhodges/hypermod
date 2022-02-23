@@ -1,0 +1,17 @@
+[package]
+name = "hypermod"
+version = "0.1.0"
+authors = ["Will Hodges <3697660+willhodges@users.noreply.github.com>"]
+license = "MIT OR Apache-2.0"
+description = "Automatically build the module tree from the src/ dir."
+repository = "https://github.com/willhodges/hypermod"
+readme = "README.md"
+edition = "2018"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+proc-macro2 = "1.0"
+quote = "1.0"
+syn = "1.0"
