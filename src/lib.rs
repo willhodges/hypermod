@@ -75,12 +75,12 @@ fn build_directory_mods_recursive(directory: &Path) -> Result<TokenStream2, Erro
     }
     Ok(quote! {
         #(
-            mod #dirnames {
+            pub mod #dirnames {
                 #modstreams
             }
         )*
         #(
-            mod #files;
+            pub mod #files;
             pub use self::#files::*;
         )*
     })
